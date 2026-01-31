@@ -36,4 +36,4 @@
 
 ## ССылка на деплой
 
----
+https://secritor.github.io/progress-component/
