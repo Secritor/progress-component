@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress bar</title>
+    <link rel="stylesheet" href="./checkbox.css" />
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./progress-ring.css" />
+    <link rel="stylesheet" href="./font.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="progress-container portrait-view">
+      <h1 class="progress-title font-roboto">Progress</h1>
+      <div class="progress-ring-container">
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="progress-ring__bg" cx="60" cy="60" r="54" />
+          <circle class="progress-ring__fill" cx="60" cy="60" r="54" />
+        </svg>
+      </div>
+      <div class="action-group">
+        <div class="input">
+          <label class="value">
+            <input type="text" inputmode="numeric" pattern="[0-9]*" />
+          </label>
+          <span class="input-subtitle font-roboto">Value</span>
+        </div>
+
+        <div class="toggle-group">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <span class="toggle-subtitle font-roboto">Animate</span>
+        </div>
+
+        <div class="toggle-group">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <span class="toggle-subtitle font-roboto">Hide</span>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

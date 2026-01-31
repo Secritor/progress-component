@@ -1,0 +1,35 @@
+.progress-ring-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring__bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 12;
+}
+
+.progress-ring__fill {
+  fill: none;
+  stroke: #0d09fc;
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-dasharray: 339.292;
+  stroke-dashoffset: 339.292;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.progress-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
