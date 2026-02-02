@@ -3,7 +3,7 @@ import { ProgressBarComponent } from "./progress.js";
 const progress = new ProgressBarComponent();
 // ну тут частичная изолированность, компонент зависит от ui которое передает родитель, но логика внутри компонента изолирована от родителя
 progress.setUIElements({
-  container: document.querySelector(".progress-container"),
+  container: document.querySelector(".progress-ring-container"),
   fill: document.querySelector(".progress-ring__fill"),
   ringSvg: document.querySelector(".progress-ring"),
   valueInput: document.querySelector('input[type="text"]'),
